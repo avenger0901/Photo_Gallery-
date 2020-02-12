@@ -6,8 +6,11 @@ class ImageItem extends Component {
         return (
             <div>
                
-           <img src={this.props.image} alt="" />
-            {/* {console.log(this.props.image.url)} */}
+           <img  className ="image" src={this.props.image} alt="" />
+           <div>
+           {this.props.title}
+            </div> 
+         
               
             </div>
         );

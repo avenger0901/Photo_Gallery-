@@ -12,12 +12,14 @@ class ImageList extends Component {
             <div>
                 {dataArray.map((image,i) =>{
                     // console.log(i);
-                    // console.log(image)
-                    return      <ImageItem key={i} image={image.url}/>
+                    console.log(image)
+                    return <ImageItem key={i} image={image.url} title={image.title}/>
+                   
+
                 })
                
                 }
-            
+                 
             </div>
         );
     }
